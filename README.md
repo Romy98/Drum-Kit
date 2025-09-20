@@ -1,6 +1,6 @@
 # Drum-Kit
 
-🥁 Drum Kit Website
+# 🥁 Drum Kit Website
 
 A simple interactive Drum Kit website where users can play drum sounds either by:
 
@@ -11,7 +11,7 @@ Pressing the corresponding keyboard keys.
 This project is a fun way to practice JavaScript event handling, DOM manipulation, and audio integration.
 
 
-🚀 Features
+# 🚀 Features
 
 Clickable drum buttons with unique sounds.
 
@@ -20,7 +20,7 @@ Keyboard support (press the matching keys to play sounds).
 Lightweight and responsive design.
 
 
-🛠️ Built With
+# 🛠️ Built With
 
 HTML5 – Structure of the webpage.
 
