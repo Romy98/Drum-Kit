@@ -5,17 +5,19 @@ for(var i = 0; i<document.querySelectorAll(".drum").length; i++){
 
     function handleClick(){
         let buttonInnerHTML = this.innerHTML;
-        makeSounds(buttonInnerHTML);
+        makeSound(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML);
     }
 }
 
 document.addEventListener("keydown", function (event){
     let keyPressed = event.key;
-    makeSounds(keyPressed);
+    makeSound(keyPressed);
+    buttonAnimation(keyPressed);
 })
 
 
-function makeSounds(key){
+function makeSound(key){
     switch (key) {
             case "w":
                 const tom1 = new Audio("/sounds/tom-1.mp3")
@@ -49,4 +51,10 @@ function makeSounds(key){
                 console.log(buttonInnerHTML);
                 break;
         }
+}
+
+function buttonAnimation(currentKey){
+
+    document.querySelector("." + currentKey).classList.add("pressed");
+    setTimeout(function(){document.querySelector("." + currentKey).classList.remove("pressed")}, 100);
 }
